@@ -3576,10 +3576,10 @@
 		(uuid "23a15e92-1760-4c9b-802b-9236dff32f7b")
 	)
 	(junction
-		(at 190.5 92.71)
+		(at 190.5 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "944778e0-cab2-4753-8a57-b7f4a8820053")
+		(uuid "8fe46dab-13b7-4ba1-9b48-79a686faef3f")
 	)
 	(junction
 		(at 190.5 93.98)
@@ -3646,16 +3646,8 @@
 		(uuid "4544b102-89cf-41cf-8fd8-c7e9cec095fa")
 	)
 	(no_connect
-		(at 193.04 86.36)
-		(uuid "61d51504-86ca-41be-bc41-9f313c99e0a6")
-	)
-	(no_connect
 		(at 66.04 40.64)
 		(uuid "67b84118-43f8-4bbe-a081-8138c3fc835d")
-	)
-	(no_connect
-		(at 193.04 99.06)
-		(uuid "7c2dae85-d19a-43e6-9b74-e2fce2e76282")
 	)
 	(no_connect
 		(at 83.82 160.02)
@@ -3703,7 +3695,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 92.71) (xy 190.5 91.44)
+			(xy 190.5 91.44) (xy 190.5 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3750,6 +3742,16 @@
 			(type default)
 		)
 		(uuid "16da094f-48a1-4313-a7bc-88b8f80917d4")
+	)
+	(wire
+		(pts
+			(xy 190.5 99.06) (xy 190.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21b9e140-9d46-4e53-9f27-501f95383880")
 	)
 	(wire
 		(pts
@@ -3933,6 +3935,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 99.06) (xy 190.5 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d56805-0bf6-4b93-bc91-1e1a21d8d2db")
+	)
+	(wire
+		(pts
 			(xy 190.5 104.14) (xy 193.04 104.14)
 		)
 		(stroke
@@ -4003,16 +4015,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 92.71) (xy 190.5 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f83dda98-cf69-4eba-aca6-03738b2d83d8")
-	)
-	(wire
-		(pts
 			(xy 161.29 97.79) (xy 161.29 92.71)
 		)
 		(stroke
@@ -4021,7 +4023,7 @@
 		)
 		(uuid "fbc46869-62e8-4898-8202-f73b07c055a4")
 	)
-	(text "76543210 ~{WR} ~{IOREQ} ~{M1}\n11000111  1  0      1\n0xC7\nREAD"
+	(text "76543210 ~{WR} ~{IOREQ} ~{M1}\n01000111  1  0      1\n0x47\nREAD"
 		(exclude_from_sim no)
 		(at 72.39 56.642 0)
 		(effects
@@ -4032,7 +4034,7 @@
 		)
 		(uuid "031bc7b7-438e-4403-8579-6f081545ee7d")
 	)
-	(text "76543210 ~{WR} ~{IOREQ}\n1100011X  X  0"
+	(text "76543210 ~{WR} ~{IOREQ}\nX100011X  X  0"
 		(exclude_from_sim no)
 		(at 137.922 39.37 0)
 		(effects
@@ -4043,7 +4045,7 @@
 		)
 		(uuid "25cf3fc5-0a13-4fac-8b57-651501ea8077")
 	)
-	(text "76543210 ~{WR} ~{IOREQ} ~{M1}\n11000111  0  0      1\n0xC7\nWRITE"
+	(text "76543210 ~{WR} ~{IOREQ} ~{M1}\n01000111  0  0      1\n0x47\nWRITE"
 		(exclude_from_sim no)
 		(at 72.39 43.434 0)
 		(effects
@@ -8120,7 +8122,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 190.5 92.71 90)
+		(at 190.5 93.98 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8129,7 +8131,7 @@
 		(fields_autoplaced yes)
 		(uuid "e67ddcb2-66ac-444a-85ae-2d3d2f0346b2")
 		(property "Reference" "#PWR017"
-			(at 194.31 92.71 0)
+			(at 194.31 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8138,7 +8140,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 186.69 92.7099 90)
+			(at 186.69 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8147,7 +8149,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 92.71 0)
+			(at 190.5 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8156,7 +8158,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 92.71 0)
+			(at 190.5 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8165,7 +8167,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 190.5 92.71 0)
+			(at 190.5 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8180,6 +8182,73 @@
 			(project "centronics"
 				(path "/fed2f63f-e834-4b73-8e0d-0fc3a743b9a8"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 193.04 86.36 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f7859f6e-5766-4300-8599-dfca563ed4a0")
+		(property "Reference" "#PWR018"
+			(at 186.69 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 86.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67aa213b-bc14-415b-862b-49223f28226e")
+		)
+		(instances
+			(project "centronics"
+				(path "/fed2f63f-e834-4b73-8e0d-0fc3a743b9a8"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
